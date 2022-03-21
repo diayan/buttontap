@@ -13,7 +13,18 @@
 		B263618127E9197300DA2F46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B263617F27E9197300DA2F46 /* Main.storyboard */; };
 		B263618327E9197500DA2F46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B263618227E9197500DA2F46 /* Assets.xcassets */; };
 		B263618627E9197500DA2F46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B263618427E9197500DA2F46 /* LaunchScreen.storyboard */; };
+		B26361AA27E91CCF00DA2F46 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26361A927E91CCF00DA2F46 /* ViewControllerTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B26361A427E91CAF00DA2F46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B263616E27E9197300DA2F46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B263617527E9197300DA2F46;
+			remoteInfo = ButtonTap;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B263617627E9197300DA2F46 /* ButtonTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButtonTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +35,19 @@
 		B263618227E9197500DA2F46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B263618527E9197500DA2F46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B263618727E9197500DA2F46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B26361A027E91CAF00DA2F46 /* ButtonTapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButtonTapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B26361A927E91CCF00DA2F46 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B263617327E9197300DA2F46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B263619D27E91CAF00DA2F46 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				B263617827E9197300DA2F46 /* ButtonTap */,
+				B26361A127E91CAF00DA2F46 /* ButtonTapTests */,
 				B263617727E9197300DA2F46 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				B263617627E9197300DA2F46 /* ButtonTap.app */,
+				B26361A027E91CAF00DA2F46 /* ButtonTapTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +87,14 @@
 				B263618727E9197500DA2F46 /* Info.plist */,
 			);
 			path = ButtonTap;
+			sourceTree = "<group>";
+		};
+		B26361A127E91CAF00DA2F46 /* ButtonTapTests */ = {
+			isa = PBXGroup;
+			children = (
+				B26361A927E91CCF00DA2F46 /* ViewControllerTests.swift */,
+			);
+			path = ButtonTapTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +117,24 @@
 			productReference = B263617627E9197300DA2F46 /* ButtonTap.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B263619F27E91CAF00DA2F46 /* ButtonTapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B26361A627E91CAF00DA2F46 /* Build configuration list for PBXNativeTarget "ButtonTapTests" */;
+			buildPhases = (
+				B263619C27E91CAF00DA2F46 /* Sources */,
+				B263619D27E91CAF00DA2F46 /* Frameworks */,
+				B263619E27E91CAF00DA2F46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B26361A527E91CAF00DA2F46 /* PBXTargetDependency */,
+			);
+			name = ButtonTapTests;
+			productName = ButtonTapTests;
+			productReference = B26361A027E91CAF00DA2F46 /* ButtonTapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +147,11 @@
 				TargetAttributes = {
 					B263617527E9197300DA2F46 = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					B263619F27E91CAF00DA2F46 = {
+						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
+						TestTargetID = B263617527E9197300DA2F46;
 					};
 				};
 			};
@@ -116,6 +169,7 @@
 			projectRoot = "";
 			targets = (
 				B263617527E9197300DA2F46 /* ButtonTap */,
+				B263619F27E91CAF00DA2F46 /* ButtonTapTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +182,13 @@
 				B263618627E9197500DA2F46 /* LaunchScreen.storyboard in Resources */,
 				B263618327E9197500DA2F46 /* Assets.xcassets in Resources */,
 				B263618127E9197300DA2F46 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B263619E27E91CAF00DA2F46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +205,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B263619C27E91CAF00DA2F46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B26361AA27E91CCF00DA2F46 /* ViewControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B26361A527E91CAF00DA2F46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B263617527E9197300DA2F46 /* ButtonTap */;
+			targetProxy = B26361A427E91CAF00DA2F46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B263617F27E9197300DA2F46 /* Main.storyboard */ = {
@@ -338,6 +415,55 @@
 			};
 			name = Release;
 		};
+		B26361A727E91CAF00DA2F46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9WTXG2G2BJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.diayansiat.ButtonTapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ButtonTap.app/ButtonTap";
+			};
+			name = Debug;
+		};
+		B26361A827E91CAF00DA2F46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9WTXG2G2BJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.diayansiat.ButtonTapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ButtonTap.app/ButtonTap";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -355,6 +481,15 @@
 			buildConfigurations = (
 				B263618B27E9197500DA2F46 /* Debug */,
 				B263618C27E9197500DA2F46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B26361A627E91CAF00DA2F46 /* Build configuration list for PBXNativeTarget "ButtonTapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B26361A727E91CAF00DA2F46 /* Debug */,
+				B26361A827E91CAF00DA2F46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
