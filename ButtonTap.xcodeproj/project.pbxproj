@@ -14,6 +14,7 @@
 		B263618327E9197500DA2F46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B263618227E9197500DA2F46 /* Assets.xcassets */; };
 		B263618627E9197500DA2F46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B263618427E9197500DA2F46 /* LaunchScreen.storyboard */; };
 		B26361AA27E91CCF00DA2F46 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26361A927E91CCF00DA2F46 /* ViewControllerTests.swift */; };
+		B26361AC27E91EFE00DA2F46 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26361AB27E91EFE00DA2F46 /* TestHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		B263618727E9197500DA2F46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B26361A027E91CAF00DA2F46 /* ButtonTapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButtonTapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B26361A927E91CCF00DA2F46 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
+		B26361AB27E91EFE00DA2F46 /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				B26361A927E91CCF00DA2F46 /* ViewControllerTests.swift */,
+				B26361AB27E91EFE00DA2F46 /* TestHelpers.swift */,
 			);
 			path = ButtonTapTests;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B26361AA27E91CCF00DA2F46 /* ViewControllerTests.swift in Sources */,
+				B26361AC27E91EFE00DA2F46 /* TestHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

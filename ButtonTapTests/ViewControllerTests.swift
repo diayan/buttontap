@@ -15,7 +15,7 @@ class ViewControllerTests: XCTestCase {
         
         sut.loadViewIfNeeded()
         
-        sut.button.sendActions(for: .touchUpInside)
+        tap(sut.button)
         
         //then assert something here
     }
